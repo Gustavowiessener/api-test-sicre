@@ -7,7 +7,6 @@
 <h4>Junit-Jupiter: 5.8.0</h4>
 <h4>Apache-Maven: 3.8.4</h4>
 
-lasse use
 <hr>
 
 <span>Na raiz do projeto, através de seu Prompt de Commando/Terminal/Console execute o seguinte comando:</span>
