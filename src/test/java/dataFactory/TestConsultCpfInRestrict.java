@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
 import static io.restassured.RestAssured.given;
 
 
-public class ConsultCpfInRestrict {
+public class TestConsultCpfInRestrict {
 
     @BeforeAll
     public static void setup() {

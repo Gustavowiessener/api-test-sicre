@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
 
-public class ChangeSimulation {
+public class TestChangeSimulation {
 
     private static String corpoRequestsNew = "{\n" +
             "  \"id\": 13,\n" +
