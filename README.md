@@ -6,7 +6,7 @@
 <h4>RestAssured version: 4.1.0</h4>
 <h4>Junit-Jupiter: 5.8.0</h4>
 <h4>Apache-Maven: 3.8.4</h4>
-
+ 
 <hr>
 
 <span>Na raiz do projeto, através de seu Prompt de Commando/Terminal/Console execute o seguinte comando:</span>
@@ -19,7 +19,7 @@
 
 <h3>Cenários do CRUD:</h3>
 
-<span>A Class, <b>*ConsultCpfInRestrict*</b> tem a finalidade de gerir as requisiçoes do tipo GET para consulta do <b>CPF</b> para automatizar a API:</span>
+<span>A Class, <b>*TestConsultCpfInRestrict*</b> tem a finalidade de gerir as requisiçoes do tipo GET para consulta do <b>CPF</b> para automatizar a API:</span>
 
 
 <span>_Cenários importantes_:</span>
@@ -32,7 +32,7 @@
 
 <hr>
 
-<span>A Class <b>*CreateSimulation*</b> tem a finalidade de gerir a requisiçao do tipo POST, este endpoint é responsável por inserir uma nova simulação: </span>
+<span>A Class <b>*TestCreateSimulation*</b> tem a finalidade de gerir a requisiçao do tipo POST, este endpoint é responsável por inserir uma nova simulação: </span>
 
 <span>_Cenários importantes_:</span>
 
@@ -46,7 +46,7 @@
 
 <hr>
 
-<span>A Class <b>*ChangeSimulations*</b> tem a finalidade de fazer a alteração no body da requisição, apartir de um atributo, usado CPF e Method PUT: <span>
+<span>A Class <b>*TestChangeSimulations*</b> tem a finalidade de fazer a alteração no body da requisição, apartir de um atributo, usado CPF e Method PUT: <span>
 
 <span>_Cenários importantes_:</span>
 
@@ -59,7 +59,7 @@
 
 <hr>
 
-<span>A Class <b>*ConsultSimulations*</b> tem a finalidade de retornar todas as simulações cadastrados, methodo GET:</span>
+<span>A Class <b>*TestConsultSimulations*</b> tem a finalidade de retornar todas as simulações cadastrados, methodo GET:</span>
 
 <span>_Cenários importantes_:</span>
 
@@ -74,7 +74,7 @@
 
 
 
-<span>A Class <b>*DeleteSimulations*</b> tem a finalidade de remover um simulação cadastrada pelo atributo ID:</span>
+<span>A Class <b>*TestDeleteSimulations*</b> tem a finalidade de remover um simulação cadastrada pelo atributo ID:</span>
 
 <span>_Cenários importantes_:</span>
 
