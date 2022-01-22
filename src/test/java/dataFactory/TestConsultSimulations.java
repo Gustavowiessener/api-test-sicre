@@ -19,7 +19,7 @@ public class TestConsultSimulations {
 
     @Test
     @DisplayName("Cenário deve pegar toda as simulações cadastradas, e retornar o status 200 com a listagem dos cadastros")
-    public void getRequestsAll() {
+    public void testGetRequestsAll() {
         Response response = given()
                 .contentType(ContentType.JSON)
                 .when()
@@ -34,7 +34,7 @@ public class TestConsultSimulations {
 
     @Test
     @DisplayName("Dado um CPF não existente, retorno previsto statusCode 404")
-    public void getInUserNotExist(){
+    public void testGetInUserNotExist(){
         Response response = given()
                 .contentType(ContentType.JSON)
                 .when()
@@ -50,7 +50,7 @@ public class TestConsultSimulations {
 
     @Test
     @DisplayName("Dado como entrada o ID como parametro, deve retornar os dados da requesição e statusCode 200")
-    public void getRequestWithQueryParam() {
+    public void testGetRequestWithQueryParam() {
         Response response = given()
                 .contentType(ContentType.JSON)
                 .param("id", "13")
@@ -66,7 +66,7 @@ public class TestConsultSimulations {
 
     @Test
     @DisplayName("Dado um CPF não valido, após a validação de CPF valido, retorno status 404")
-    public void getCpfNotExist(){
+    public void testGetCpfNotExist(){
         Response response = given()
                 .contentType(ContentType.JSON)
                 .when()

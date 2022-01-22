@@ -19,7 +19,7 @@ public class TestDeleteSimulations {
 
     @Test
     @DisplayName("Dado como entrada o ID para exclusão de uma simualação, deve retornar o status 204")
-    public void deleteInUser() {
+    public void testDeleteInUser() {
         Response response = given()
                 .contentType(ContentType.JSON)
                 .when()
@@ -37,7 +37,7 @@ public class TestDeleteSimulations {
 
     @Test
     @DisplayName("Dado como entrada um ID não existente, o status retorna 200.")
-    public void deleteUserIdsNotExist() {
+    public void testDeleteUserIdsNotExist() {
         Response response = given()
                 .contentType(ContentType.JSON)
                 .when()

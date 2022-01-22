@@ -20,7 +20,7 @@ public class TestConsultCpfInRestrict {
 
     @Test
     @DisplayName("Entrada com um CPF e deve retornar status 200 se tiver um problema/restrição")
-    public void getCpfInProblemAssert() {
+    public void testGetCpfInProblemAssert() {
             Response response = given()
                     .contentType(ContentType.JSON)
                     .when()
@@ -35,7 +35,7 @@ public class TestConsultCpfInRestrict {
 
     @Test
     @DisplayName("Novo cenário com outro CPF, deve retornar status 200 e mensagem")
-    public void getCpfInNotProblemAssert() {
+    public void testGetCpfInNotProblemAssert() {
         Response response = given()
                 .contentType(ContentType.JSON)
                 .when()

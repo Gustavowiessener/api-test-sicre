@@ -50,7 +50,7 @@ public class TestCreateSimulations {
 
     @Test
     @DisplayName("Dado um body válido para API, deve retornar o status 201 e os dados inseridos como retorno")
-    public void postRequest() {
+    public void testPostRequest() {
         Response response = given()
                 .header("Content-type", "application/json")
                 .and()
@@ -77,7 +77,7 @@ public class TestCreateSimulations {
 
     @Test
     @DisplayName("Dado a entrada de um Body invalido resultado deve ser um statusCode de 400")
-    public void postRequestInvalid() {
+    public void testPostRequestInvalid() {
         Response response = given()
                 .header("Content-type", "application/json")
                 .and()
@@ -94,7 +94,7 @@ public class TestCreateSimulations {
 
     @Test
     @DisplayName("Dado como entrada um request já existente, deve retornar statusCode 400 com mensagem CPF duplicado")
-    public void postRequestExist() {
+    public void testPostRequestExist() {
         Response response = given()
                 .header("Content-type", "application/json")
                 .and()

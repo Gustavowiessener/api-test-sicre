@@ -30,7 +30,7 @@ public class TestChangeSimulation {
 
     @Test
     @DisplayName("Dado como entrada um CPF, a partir desse atributo fazer a alteração no body da requisição")
-    public void PutNewAddUsers() {
+    public void testPutNewAddUsers() {
         Response response = given()
                 .header("Content-type", "application/json")
                 .and()
@@ -48,7 +48,7 @@ public class TestChangeSimulation {
 
     @Test
     @DisplayName("Dado a entrada um atribuito inexistente, o retorno deve ser 404")
-    public void PutNewAddUsersNotExist() {
+    public void testPutNewAddUsersNotExist() {
         Response response = given()
                 .header("Content-type", "application/json")
                 .and()
