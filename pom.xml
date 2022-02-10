@@ -12,6 +12,11 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
     </properties>
+         
+         <properties>
+         <sonar.organization>gustavowiessener</sonar.organization>
+         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+         </properties>
 
 
     <dependencies>
