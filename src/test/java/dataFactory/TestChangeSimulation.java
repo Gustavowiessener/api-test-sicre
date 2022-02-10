@@ -29,7 +29,7 @@ public class TestChangeSimulation {
     }
 
     @Test
-    @DisplayName("Dado como entrada um CPF, a partir desse atributo fazer a alteração no body da requisição")
+    @DisplayName("Dado comom entrada um CPF, a partir desse atributo fazer a alteração no body da requisição")
     public void testPutNewAddUsers() {
         Response response = given()
                 .header("Content-type", "application/json")
