@@ -39,12 +39,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-vuln-image:latest
-    - name: Monitor Docker Vulnerabilities
-      uses: snyk/actions/docker@master
-      env:
-        SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+    - name: Snyk
+    - uses: snyk/actions@0.3.0
       with:
-        image: my-vuln-image:latest
-        command: monitor
+        command: snyk test
+   
+   
