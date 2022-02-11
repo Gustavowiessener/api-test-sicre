@@ -35,8 +35,5 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=Gustavowiessener_api-test-sicre
 
-      - name: Snyk
-        uses: snyk/actions@0.3.0
-      
       
    
