@@ -36,6 +36,7 @@ jobs:
         run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=Gustavowiessener_api-test-sicre
 
   security:
+    name: Security
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
